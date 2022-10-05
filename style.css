@@ -248,3 +248,13 @@ font family: headers : font-family: 'Catamaran', sans-serif;
   font-size: 2rem;
   margin-bottom: 1rem;
 }
+
+/*-------------------IMAGES----------------------------------*/
+.bg-image {
+  background-size: cover;
+  background-position: center;
+  min-height: 10rem;
+}
+.bg-light {
+  background-image: url('/images/light.jpg');
+}
