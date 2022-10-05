@@ -21,6 +21,14 @@ font family: headers : font-family: 'Catamaran', sans-serif;
   img { max-width: 100%; }
  
   html { scroll-behavior: smooth;}
+
+  /* ---------- Negative Space Utility Classes  ------------------ */ 
+
+.capped-width-wide      { max-width: 1600px; margin: auto; }
+.capped-width           { max-width: 1200px; margin: auto; }
+.capped-width-narrow    { max-width: 1000px; margin: auto; }
+.capped-width-v-narrow  { max-width: 800px;  margin: auto; }
+
  /* Utility classes  vh */
  
  .tall-50 { min-height: 50vh; }
@@ -114,7 +122,46 @@ font family: headers : font-family: 'Catamaran', sans-serif;
  .bg-light {background-color:#F8F5F2; /*var(--bg-light);*/}
  .bg-dark {background-color: #2A3C2D;/*var(--bg-dark);*/}
  .bg-sand {background-color: #E4CAB4;}
- 
+
+ .bg-overlay::after {
+  z-index: 1;
+  content: ""; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(97, 97, 97, 0.5);
+}
+
+/*------ background & bg images----*/
+
+.bg-overlay > * {
+  z-index: 2;
+  position: relative;
+}
+/* Add a second class to change the color or style  */
+
+.bg-overlay-gradient::after { 
+  background-image: linear-gradient(0deg, rgba(54, 53, 53, 0.3), rgba(0, 0, 0, 0));
+} 
+
+.bg-overlay-featured::after { 
+  background-color: var(--featured);
+  opacity: 0.5;
+} 
+
+/*-------------------IMAGES----------------------------------*/
+.bg-image {
+  background-size: cover;
+  background-position: center;
+  min-height: 10rem;
+}
+.bg-light {
+  background-image: url('/images/light.jpg');
+}
+
+
  /*-------------------------------------------------- utility classes text */
  
  .light-text { color: #F8F5F2;/*var(--light-text);*/ } 
@@ -164,18 +211,6 @@ font family: headers : font-family: 'Catamaran', sans-serif;
    .bg-pos-r { background-position: right; }
  
    
-
-   /* banner fixed */
-   .banner,
-  .banner-with-header {
-    background-image: url('/images/light.jpg');
-    background-size: cover;
-    background-position: center;
-    min-height: 80vh;
-  }
-  .fixed {
-    background-attachment: fixed;
-  }
 
   /*-----------------------TYPO STYLES--------------------------------*/
   body {
@@ -242,6 +277,21 @@ font family: headers : font-family: 'Catamaran', sans-serif;
     }
     
 
+   /* banner fixed */
+   .banner,
+   .banner-with-header {
+     /*
+     background-image: url('/images/light.jpg') ;
+     background-size: cover;
+     background-position: center;*/
+     min-height: 80vh;
+
+   }
+   .fixed {
+     background-attachment: fixed;
+   }
+ 
+
 
 /*-------------------- CHOSE US SECTION------------------------*/
 .big-icon {
@@ -249,12 +299,30 @@ font family: headers : font-family: 'Catamaran', sans-serif;
   margin-bottom: 1rem;
 }
 
-/*-------------------IMAGES----------------------------------*/
-.bg-image {
-  background-size: cover;
-  background-position: center;
-  min-height: 10rem;
+
+
+
+ /*----------- Footer-------------- */
+
+ footer nav a {
+  display:block;
+  padding: 0.25rem;
+  font-weight: 200;
+  text-align: top;
 }
-.bg-light {
-  background-image: url('/images/light.jpg');
+
+footer nav a:hover {
+  color: #2A3C2D;
+}
+footer h4 {
+  padding-bottom: 1rem;
+  color:#E4CAB4;
+}
+.sub-footer { padding-top: 5%;}
+.sub-footer p {
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
+footer .fab {
+  font-size: 30px;
 }
