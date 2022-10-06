@@ -260,6 +260,9 @@ font family: headers : font-family: 'Catamaran', sans-serif;
     
     ul { margin-bottom: 3%;}
 
+/*----------------------BUTTON----------------------------------*/
+
+
 /*-----------------------HEADER STYLES--------------------------*/
 
     header a{
@@ -313,6 +316,7 @@ font family: headers : font-family: 'Catamaran', sans-serif;
 
 footer nav a:hover {
   color: #2A3C2D;
+  font-weight: 500;
 }
 footer h4 {
   padding-bottom: 1rem;
