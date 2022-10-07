@@ -97,6 +97,8 @@ font family: headers : font-family: 'Catamaran', sans-serif;
  .margin-tb { margin-top: 5%; margin-bottom: 5%; }
  .margin-lr { margin-left: 5%; margin-right: 5%; }
  
+ .column-reverse {
+  flex-direction: column-reverse;}
  /*  utility classes background */ 
  .full-width {
    align-items: center;
@@ -244,7 +246,7 @@ font family: headers : font-family: 'Catamaran', sans-serif;
     color: #2A3C2D;
   }
 
-  p{
+  p,ul{
     font-weight: 300;
     line-height: 1.5;
     margin-bottom: 1rem;
@@ -317,15 +319,61 @@ font family: headers : font-family: 'Catamaran', sans-serif;
      background-attachment: fixed;
    }
  
+/*---------------------SERVICE SECTION------------------- */
+.bg-image-section {
+  background-color: rgb(90,90,90);
+  background-size: cover;
+  background-position: center;
+}
+/* clickable boxes */
 
+.clickable-box {
+  color: inherit;
+  text-decoration: none;
+  box-shadow: 0 rgba(0, 0, 0, 0); /* so that we can add a transition */
+  transition: 0.2s all;
+  display: block;
+}
 
+.clickable-box .overlay {
+  min-height: 12rem;
+  padding: 3rem 1rem;
+  background-color: rgba(0,0,10,0.4);
+  color: white;
+}
+
+.clickable-box p {
+  margin-bottom: 0;
+}
+
+.clickable-box:hover {
+  background-color: rgba(0,0,10,0.6);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.4), 0 10px 20px -5px rgba(0, 0, 0, 0.4);
+  margin-top:-2px;
+}
 /*-------------------- CHOSE US SECTION------------------------*/
 .big-icon {
   font-size: 2rem;
   margin-bottom: 1rem;
 }
 
+/*------------------- OM PAGE SECTION-------------------------------*/
+.bg-image-om {
+  background-size: cover;
+  background-position: center;
+  min-height: 10rem;
+  background-image:url('/images/light.jpg');
+}
+/* change images*/
+.bg-mountain {
+  background-image:url('/images/light.jpg');
+}
 
+.bg-adventure {
+  background-image:url('/images/light.jpg');
+}
+
+            
 
 
  /*----------- Footer-------------- */
