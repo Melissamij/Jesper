@@ -159,6 +159,8 @@ font family: headers : font-family: 'Catamaran', sans-serif;
 }
 .bg-light {
   background-image: url('/images/light.jpg');
+  background-position: 0px 280px;
+
 }
 
 
@@ -228,7 +230,7 @@ font family: headers : font-family: 'Catamaran', sans-serif;
 
   h2 {
     font-family: 'Catamaran', sans-serif;
-    font-weight: 500;
+    font-weight: 800;
     font-size: 2.5rem;
     line-height: 1.1;
     margin-bottom: 1rem;
@@ -256,6 +258,7 @@ font family: headers : font-family: 'Catamaran', sans-serif;
     
     a:hover{
         color: #2A3C2D;
+        font-weight: 500;
     }
     
     ul { margin-bottom: 3%;}
@@ -271,17 +274,18 @@ font family: headers : font-family: 'Catamaran', sans-serif;
 }
 
 .button:hover {
-  color:#F8F5F2;
+  background-color: #F8F5F2; 
 }
 
 .button-inverted {
   background-color: #F8F5F2;
-  border: 0.5px solid #2A3C2D;
+  border: 0.5px solid #F8F5F2;
   color: #2A3C2D;
   padding: 0.5rem 1.5rem;
 }
 .button-inverted:hover {
-  color:#2A3C2D;
+  background-color:#2A3C2D;
+  color:#F8F5F2;
 }
 /*-----------------------HEADER STYLES--------------------------*/
 
@@ -303,12 +307,12 @@ font family: headers : font-family: 'Catamaran', sans-serif;
    /* banner fixed */
    .banner,
    .banner-with-header {
-     background-image: url('/images/light.jpg') ;
+     background-image: url('/images/solar-dark.jpg') ;
      background-size: cover; 
-     background-position: bottom;
      min-height: 80vh;
 
    }
+  
    .fixed {
      background-attachment: fixed;
    }
