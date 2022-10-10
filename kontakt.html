@@ -5,3 +5,37 @@ layout: default
 
 
 {% include header-nav.html %}
+
+<!------------ Contact Form-------->
+<section class="contact-form grid-center padded">
+    <div class="padded center">
+        <h2>Kontakt os for et uforpligtende tilbud.</h2>
+        <p>Vores elektriker kører dagligt i Roskilde, Frederikssund, Hillerød og Frederiksværk, men vi dækker hele Nordsjælland og Storkøbenhavn - Der med garanterer vi stabil og hurtig service.
+         kontakt os på telefon <a href="tel:+4530955295">30 95 52 95</a> eller udfyld formularen her under.</p>
+    </div>
+    <div class="col-6_sm-12-middle padded">
+<!--- add form spree--->
+        <form class="grid-center padded" action="https://formspree.io/f/xeqnyaag" method="POST">
+
+            <div class="col-6_sm-12-middle">
+                <label for="_name">NAVN*</label>
+                <input type="text" name="_name" id="_name" required />
+            </div>
+            <div class="col-6_sm-12-middle">
+                <label for="_phone">TELEFON*</label>
+                <input type="tel" name="_phone" id="_phone" required />
+            </div>
+            <div class="col-12-middle">
+                <label>E-MAIL*</label>
+                <input type="email" name="_replyto" id="_replyto" required />
+            </div>
+            <div class="col-12-middle">
+                <label for="_beskrivelse">BESKRIVELSE*</label>
+                <textarea type="text" name="_beskrivelse" id="_beskrivelse" required></textarea>
+            </div>
+            <div class="col-12">
+            <button type="submit" class="button">SUBMIT</button>
+            </div>
+        </form>
+    </div>
+</section>

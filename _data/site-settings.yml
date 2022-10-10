@@ -1,0 +1,19 @@
+seo:
+  site_name: Nordsjællands El Service
+  title: Auto EL-Installator
+  description: 
+  keywords:
+  social_image:
+  favicon_image:
+social:
+  instagram_username:
+  facebook_url:
+  twitter_username:
+design:
+  dark-text_color: '#4a4444'
+  light-text_color: '#faf6f0'
+  featured-text_color: '#2A3C2D'
+  featured-text-white_color: '#ffffff'
+  bg-dark_color: '#2A3C2D'
+  bg-light_color: '#F8F5F2'
+  bg-sand_color: '#E4CAB4'

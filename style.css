@@ -99,6 +99,7 @@ font family: headers : font-family: 'Catamaran', sans-serif;
  
  .column-reverse {
   flex-direction: column-reverse;}
+
  /*  utility classes background */ 
  .full-width {
    align-items: center;
@@ -121,9 +122,9 @@ font family: headers : font-family: 'Catamaran', sans-serif;
      margin: auto;
  }
  /*  Background colors */
- .bg-light {background-color:#F8F5F2; /*var(--bg-light);*/}
- .bg-dark {background-color: #2A3C2D;/*var(--bg-dark);*/}
- .bg-sand {background-color: #E4CAB4;}
+ .bg-light {var(--bg-light);}
+ .bg-dark {var(--bg-dark);}
+ .bg-sand {var(--bg-sand);}
 
  .bg-overlay::after {
   z-index: 1;
@@ -155,15 +156,18 @@ font family: headers : font-family: 'Catamaran', sans-serif;
 
 /*-------------------IMAGES----------------------------------*/
 .bg-image {
+  background-image: url('/images/light.jpg');
   background-size: cover;
   background-position: center;
-  min-height: 10rem;
+  color:#2A3C2D;
+  /*min-height: 10rem;*/
 }
 .bg-light {
   background-image: url('/images/light.jpg');
   background-position: 0px 280px;
 
 }
+
 
 
  /*-------------------------------------------------- utility classes text */
@@ -373,7 +377,131 @@ font family: headers : font-family: 'Catamaran', sans-serif;
   background-image:url('/images/light.jpg');
 }
 
-            
+/*--------------------- KONTAKT FORM-----------------------*/
+/*-------------- form style */
+form [class*=col-] {
+  width: 50%;
+  flex-direction: column;
+
+  }
+input {
+  border-style: solid;
+  border: 2px solid #FAF6F0;
+  padding: 0.8em;
+  display: block;
+  width: 100%;
+  font-size: 1rem;
+  vertical-align: top;
+  }
+
+  
+/* checkboxes style */
+/*
+input[type="checkbox"]{
+  position:inherit;}
+
+.checkboxes {
+  width: 15px;
+  height: 15px;}
+  input[type="checkbox"]:checked + label::after {
+    content: '';
+    position: absolute;
+    width: 1.2ex;
+    height: 0.4ex;
+    background: rgba(0, 0, 0, 0);
+    
+    top: 0.9ex;
+    left: 0.4ex;
+    border: 3px solid #2A3C2D;
+    border-top: none;
+    border-right: none;
+    
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+ }
+
+ input[type="checkbox"] {
+    line-height: 2.1ex;
+ }
+
+ input[type="radio"],
+ input[type="checkbox"] {
+     position: absolute;
+     left: -999em;
+ }
+
+ input[type="checkbox"] + label {
+     position: relative;
+     overflow: hidden;
+     cursor: pointer;
+ }
+
+ input[type="checkbox"] + label::before {
+    content: "";
+    display: inline-block;
+    vertical-align: -25%;
+    height: 2ex;
+    width: 2ex;
+    background-color: white;
+    border: 0.5px solid #2A3C2D;
+    border-radius: 4px;
+    margin-right: 0.5em;
+ }
+  input[type="submit"] {
+    width: auto;
+    display: block;
+  }
+*/
+label, .checkboxes {
+  display: inline-block;
+  padding-bottom: 2%;
+}
+
+  
+
+  input:focus,
+  textarea:focus {
+    outline: none;
+    border: 2px solid #2A3C2D;
+    /* featured color */
+  }
+  
+  textarea {
+    min-height: 7em;
+    width: 100%;
+    border: none;
+  }
+  
+  .email-signup input {
+    width: 30%;
+    display: inline-block;
+    max-width: 250px;
+    margin-top:1rem;
+  }
+  
+  .email-signup .button-solid {
+    padding: 0.8em;
+    border-radius: 0;
+    font-size: 1rem;
+  }
+  form .button {
+    width:100%;
+    background-color: #2A3C2D;
+  }
+  form .button:hover{
+    background-color: #E4CAB4;
+    color: #2A3C2D;
+  }
+    @media(max-width:768px) {
+     .email-signup input {
+       width: 100%;
+       max-width: 100%;
+     }
+   }
+
 
 
  /*----------- Footer-------------- */
