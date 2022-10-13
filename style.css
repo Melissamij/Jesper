@@ -281,7 +281,17 @@ font family: headers : font-family: 'Catamaran', sans-serif;
     ul { margin-bottom: 3%;}
 
 /*----------------------BUTTON----------------------------------*/
-
+button {
+  display: inline-block;
+  background-color: #2A3C2D;
+  border: 0.5px solid #F8F5F2;
+  color: #F8F5F2;
+  padding: 0.5rem 1.5rem;
+}
+button:hover {
+  background-color: #F8F5F2; 
+  color:#2A3C2D;
+}
 .button {
   display: inline-block;
   background-color: #2A3C2D;
@@ -292,6 +302,7 @@ font family: headers : font-family: 'Catamaran', sans-serif;
 
 .button:hover {
   background-color: #F8F5F2; 
+  color:#2A3C2D;
 }
 
 .button-inverted {
@@ -370,8 +381,22 @@ font family: headers : font-family: 'Catamaran', sans-serif;
 .big-icon {
   font-size: 2rem;
   margin-bottom: 1rem;
+  color:#2A3C2D;
 }
-
+.phone-icon-dark {
+  font-size:1rem;
+  color: #2A3C2D;
+}
+.phone-icon-dark:hover{
+  color:#F8F5F2;
+}
+.phone-icon-light {
+  font-size:1rem;
+  color:#F8F5F2;
+}
+/*.phone-icon-light:hover {
+  color: #2A3C2D;
+}*/
 /*------------------- OM PAGE SECTION-------------------------------*/
 .bg-image-om {
   background-size: cover;
