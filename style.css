@@ -122,9 +122,9 @@ font family: headers : font-family: 'Catamaran', sans-serif;
      margin: auto;
  }
  /*  Background colors */
- .bg-light {background-color: var(--bg-light);}
- .bg-dark {background-color: var(--bg-dark);}
- .bg-sand {background-color: var(--bg-sand);}
+ .bg-light {background-color: #F8F5F2/*var(--bg-light)*/;}
+ .bg-dark {background-color: #2A3C2D/*var(--bg-dark)*/;}
+ .bg-sand {background-color: #E4CAB4/*var(--bg-sand)*/;}
 
  .bg-overlay::after {
   z-index: 1;
@@ -162,10 +162,21 @@ font family: headers : font-family: 'Catamaran', sans-serif;
   color:#2A3C2D;
   /*min-height: 10rem;*/
 }
-.bg-light {
+.bg-lights {
   background-image: url('/images/light.jpg');
   background-position: 0px 280px;
+  min-height: 10rem;
 
+}
+.bg-solar-dark {
+  background-image: url('/images/solar-dark.jpg');
+  min-height: 15rem;
+}
+.bg-ampoule {
+  background-image: url('/images/ampoule.jpg');
+}
+.bg-car {
+  background-image: url('/images/car.jpg');
 }
 
 

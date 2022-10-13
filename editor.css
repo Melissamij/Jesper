@@ -1,0 +1,45 @@
+
+/* These styles are available in the cloudcannon blog post editor as classes to apply */
+
+img.wide-image {
+    margin-left: -5%;
+    margin-right: -5%;
+}
+
+img.one-third-image {
+    display: inline-block;
+    width: calc(33% - 1rem);
+    margin: 0.5rem;
+  }
+  
+img.-image {
+    display: inline-block;
+    width: calc(50% - 1rem);
+    margin: 0.5rem;
+}
+
+img.float-left-image {
+    max-width:50%;
+    float: left;
+    margin: 0 2rem 0.5rem -2rem;
+}
+
+img.float-right-image {
+    max-width:50%;
+    float: right;
+    margin: 0 -2rem 0.5rem 2rem;
+}
+
+img.small-centered-image {
+    max-width: 300px;
+    margin:auto;
+}
+
+
+@media(max-width: 767px) {
+    .float-right-image, 
+    .float-left-image {
+      float: none;
+      width: margin 0 1rem;
+    }
+}
