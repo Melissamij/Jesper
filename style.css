@@ -97,8 +97,6 @@ font family: headers : font-family: 'Catamaran', sans-serif;
  .margin-tb { margin-top: 5%; margin-bottom: 5%; }
  .margin-lr { margin-left: 5%; margin-right: 5%; }
  
- .column-reverse {
-  flex-direction: column-reverse;}
 
  /*  utility classes background */ 
  .full-width {
@@ -331,8 +329,70 @@ button:hover {
       background-position: center;
     }
     
+    .nav-button{
+      border: 2px solid;
+      border-radius: 3px;
+      padding: 0.5rem 1.5rem;
+      margin-left: 1rem;
+      background-color:#F7D1CD;
+      color:white;
+      
+    }
+    .nav-button:hover{
+      background-color: white;
+      color: #F7D1CD;
+    }
+/* -------------------------------------Mobile Menu Styles */
+    .hamburger-button {
+      cursor: pointer;
+      color: #2A3C2D;
+      display: inline-block;
+      position: relative;
+      right: 1rem;
+      top: 1.5rem;
+      z-index: 2;
+      }
 
-   /* banner fixed */
+      .hamburger-button.active {
+      color: #E4CAB4;
+      }
+
+      .hamburger-button i {
+      font-size: 2.2rem;
+      margin-bottom: 0;
+      }
+
+    .mobile-menu {
+      font-family: 'Catamaran', sans-serif;
+      display: none;
+      background-color: #F8F5F2;
+      font-size: 2rem;
+      line-height: 1.1;
+      margin-bottom: 1rem;
+      color: #2A3C2D; 
+      padding: 5%;
+      position: fixed; 
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      text-align: left;
+      z-index: 1;
+    }
+
+    .mobile-menu a {
+    display:block;
+    color: #2A3C2D;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    font-weight: 600;
+    }
+    .mobile-menu a:hover{ color: #4A4444;}
+
+  
+
+
+   /* ---------------banner fixed */
    .banner,
    .banner-with-header {
      background-image: url('/images/solar-dark.jpg') ;
@@ -501,3 +561,86 @@ footer h4 {
 footer .fab {
   font-size: 30px;
 }
+
+
+ /* General CSS Responsive Styles (Apply everywhere unless overridden) */ 
+
+ .show-xs, 
+ .show-sm,
+ .show-md,
+ .mobile-menu {display: none;}
+ 
+ /* ------- MD Media Query (64em / 1024px) --------------- */ 
+ /* - Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */ 
+ 
+ @media (max-width: 64em) {
+   .show-md { display: block; }
+   .hide-md { display: none; }
+   
+ }
+ 
+ /* ------- SM Media Query (48em / 768px) --------------- */ 
+ /* - Styles added here will apply at devices smaller than 768px, or zoomed in equivalent */ 
+ 
+ @media (max-width: 48em) {
+   html {font-size: 14px;}
+   h1 { font-size: 2rem;}
+   p {font-size: 1.3rem;}
+   h3 {font-size: 2rem;}
+   h4 {font-size: 2rem;}
+   footer{ text-align: center;}
+   .bold { font-weight: 600;}
+   .button{display: inline;}
+   .mob-hide { display: none; }
+   .mob-show { display: block; }
+   .show-sm { display: block; }
+   .hide-sm { display: none;  }
+      
+   .sm-text-center { text-align: center; }
+   .sm-text-left { text-align: left; }
+   .sm-text-right { text-align: right; }
+ 
+   .sm-padded { padding: 5%; }
+   .sm-padded-1 { padding: 1rem; }
+   .sm-padded-05 { padding: 0.5rem; }
+ 
+   .sm-padded-t-0 { padding-top: 0; }
+   .sm-padded-b-0 { padding-bottom: 0; }
+   .sm-padded-l-0 { padding-left: 0; }
+   .sm-padded-r-0 { padding-right: 0; }
+   
+   .sm-margin-t-0 { margin-top: 0; }
+   .sm-margin-b-0 { margin-bottom: 0; }
+   .sm-margin-l-0 { margin-left: 0; }
+   .sm-margin-r-0 { margin-right: 0; }
+   .logo h2 {font-size: 2rem;}
+   .logo-beige { width: 200px;}
+   .column-reverse {
+     flex-direction: column-reverse;}
+  
+   /*.header-nav { height: 50vh;}*/
+   .mobile-menu a{ 
+     font-size: 20px;
+     font-weight: 300;}
+   }
+  
+ 
+ /* ------- XS Media Query (36em / 576px) --------------- */ 
+ /* - Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */ 
+ 
+ @media (max-width: 36em) {
+   .show-xs { display: block; }
+   .hide-xs { display: none;  }
+   h1 {line-height: 1.1; }
+   .horizontal-scroll {
+       overflow-x: auto;
+       flex-wrap: nowrap;
+       padding-left: 1rem;
+       padding-right: 1rem;
+       padding-bottom: 7%;
+     }
+   .mob-padded-0 {
+       padding-left: 0;
+       padding-right: 0;
+     }
+ }
