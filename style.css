@@ -354,7 +354,7 @@ button:hover {
       }
 
       .hamburger-button.active {
-      color: #E4CAB4;
+      color: #625C5C;
       }
 
       .hamburger-button i {
@@ -363,14 +363,14 @@ button:hover {
       }
 
     .mobile-menu {
-      font-family: 'Catamaran', sans-serif;
       display: none;
+      min-height: 100vh;
       background-color: #F8F5F2;
+      /*
       font-size: 2rem;
       line-height: 1.1;
       margin-bottom: 1rem;
-      color: #2A3C2D; 
-      padding: 5%;
+      padding: 5%;*/
       position: fixed; 
       top: 0;
       bottom: 0;
@@ -378,14 +378,16 @@ button:hover {
       right: 0;
       text-align: left;
       z-index: 1;
+      font-weight: 800;
     }
 
     .mobile-menu a {
+    font-family: 'Catamaran', sans-serif;
     display:block;
     color: #2A3C2D;
-    font-size: 1.2rem;
-    padding: 0.5rem;
-    font-weight: 600;
+    font-size: 2rem;
+    padding: 5%;
+    font-weight: 200;
     }
     .mobile-menu a:hover{ color: #4A4444;}
 
