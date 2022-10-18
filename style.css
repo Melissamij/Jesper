@@ -416,7 +416,10 @@ button:hover {
     padding: 5%;
     font-weight: 200;
     }
-    .mobile-menu a:hover{ color: #4A4444;}
+    .mobile-menu a:hover{ 
+      color: #4A4444;
+      font-weight: 800;
+    }
 
   
 
