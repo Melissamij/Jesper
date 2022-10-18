@@ -579,8 +579,7 @@ footer nav a:hover {
   font-weight: 500;
 }
 footer h4 {
-  padding-bottom: 1rem;
-  color:#E4CAB4;
+  color:#2A3C2D;
 }
 .sub-footer { padding-top: 5%;}
 .sub-footer p {
@@ -618,6 +617,7 @@ footer .fab {
    h3 {font-size: 2rem;}
    h4 {font-size: 2rem;}
    footer{ text-align: center;}
+   footer, h4 { font-size: 1,5rem;}
    .bold { font-weight: 600;}
    .button{display: inline;}
    .mob-hide { display: none; }
