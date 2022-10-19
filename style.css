@@ -167,7 +167,7 @@ font family: headers : font-family: 'Catamaran', sans-serif;
 
 }
 .bg-solar-dark {
-  background-image: url('/images/solar-dark.jpg');
+  background-image: url('/images/solar-dark.webp');
   min-height: 15rem;
 }
 .bg-ampoule {
