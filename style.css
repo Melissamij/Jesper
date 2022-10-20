@@ -519,7 +519,7 @@ input {
   display: block;
   width: 100%;
   font-size: 1rem;
-  vertical-align: top;
+  /*vertical-align: top;*/
   }
 
 label, .checkboxes {
