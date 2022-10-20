@@ -21,7 +21,7 @@ banner:
     </div>
     <div class="col-6_sm-12-middle padded">
 <!--- add form spree--->
-        <form class="grid-center padded" action="https://formspree.io/f/xeqnyaag" method="POST">
+        <form class="grid-center padded" action="https://formspree.io/f/xeqnyaag" method="POST" action="/index.html">
 
             <div class="col-6_sm-12-middle">
                 <label for="_name">NAVN*</label>
@@ -39,6 +39,7 @@ banner:
                 <label for="_beskrivelse">BESKRIVELSE*</label>
                 <textarea type="text" name="_beskrivelse" id="_beskrivelse" required></textarea>
             </div>
+            <input type="hidden" name="inbox_key" value="kontakt-from">
             <div class="col-12">
             <button type="submit" class="button">SUBMIT</button>
             </div>
