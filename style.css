@@ -275,10 +275,13 @@ font family: headers : font-family: 'Catamaran', sans-serif;
         color: var(--featured-text);
         font-weight: 500;
     }
+  
     a:hover .phone-icon-dark {
       color:#F8F5F2;
     }
-    
+    a:hover .phone-icon-light{
+      color: var(--featured-text);
+    }
     ul { margin-bottom: 3%;}
 
 /*----------------------BUTTON----------------------------------*/
@@ -315,6 +318,16 @@ button:hover {
 .button-inverted:hover {
   background-color:var(--bg-dark);
   color:var(--light-text);
+}
+/*--- Phone Icon--*/
+.phone-icon-dark {
+  font-size:1rem;
+  color: var(--featured-text);
+}
+
+.phone-icon-light {
+  font-size:1rem;
+  color:#F8F5F2;
 }
 
 /*------------BAck to top arrow------------ */
@@ -484,20 +497,7 @@ button:hover {
   margin-bottom: 1rem;
   color:var(--featured-text);
 }
-.phone-icon-dark {
-  font-size:1rem;
-  color: var(--featured-text);
-}
-/*.phone-icon-dark:hover{
-  color:#F8F5F2;
-}*/
-.phone-icon-light {
-  font-size:1rem;
-  color:#F8F5F2;
-}
-/*.phone-icon-light:hover {
-  color: #2A3C2D;
-}*/
+
 /*------------------- OM PAGE SECTION-------------------------------*/
 .bg-image-om {
   background-size: cover;
