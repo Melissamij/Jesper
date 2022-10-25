@@ -515,6 +515,10 @@ button:hover {
   background-image:url('/images/light.jpg');
 }
 
+.bg-car {
+  background-image: url('/images/car.webp');
+}
+
 /*--------------------- KONTAKT FORM-----------------------*/
 /*-------------- form style */
 form [class*=col-] {
@@ -612,7 +616,7 @@ footer .fab {
  .mobile-menu {display: none;}
  
  /* ------- MD Media Query (64em / 1024px) --------------- */ 
- /* - Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */ 
+ /* - Styles added here will apply at devices smaller than 1024px, or zoomed in equivalent */ 
  
  @media (max-width: 64em) {
    .show-md { display: block; }
@@ -660,10 +664,13 @@ footer .fab {
    .column-reverse {
      flex-direction: column-reverse;}
   
-   /*.header-nav { height: 50vh;}*/
+   .header-nav { height: 50vh;}
    .mobile-menu a{ 
      font-size: 20px;
      font-weight: 300;}
+    .bg-solar-dark {
+      background-image: url('/images/solar-dark-450.webp');
+    }
    }
   
  
