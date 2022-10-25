@@ -455,9 +455,7 @@ button:hover {
 
    }
   
-   .fixed {
-     background-attachment: fixed;
-   }
+   
    /* avoid breaking on phones*/
    @media(min-width:450px) {
     .fixed {
