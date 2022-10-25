@@ -168,13 +168,19 @@ font family: headers : font-family: 'Catamaran', sans-serif;
 }
 .bg-solar-dark {
   background-image: url('/images/solar-dark.webp');
+  background-size: cover;
+  background-position: center;
   min-height: 15rem;
 }
 .bg-ampoule {
   background-image: url('/images/ampoule.webp');
+  background-size: cover;
+  background-position: center;
 }
 .bg-car {
   background-image: url('/images/car.webp');
+  background-size: cover;
+  background-position: center;
 }
 
 
@@ -499,15 +505,15 @@ button:hover {
   color:var(--featured-text);
 }
 
-/*------------------- OM PAGE SECTION-------------------------------*/
-.bg-image-om {
+/*------------------- AbBOUT PAGE SECTION-------------------------------*/
+/*.bg-image-om {
   background-size: cover;
   background-position: center;
   min-height: 10rem;
   background-image:url('/images/light.jpg');
-}
+}*/
 /* change images*/
-.bg-mountain {
+/*.bg-mountain {
   background-image:url('/images/light.jpg');
 }
 
@@ -517,7 +523,7 @@ button:hover {
 
 .bg-car {
   background-image: url('/images/car.webp');
-}
+}*/
 
 /*--------------------- KONTAKT FORM-----------------------*/
 /*-------------- form style */
