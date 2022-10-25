@@ -449,7 +449,7 @@ button:hover {
    /* ---------------banner fixed */
    .banner,
    .banner-with-header {
-     background-image: url('/images/solar-dark.jpg') ;
+     background-image: url('/images/solar-dark.webp');
      background-size: cover; 
      min-height: 80vh;
 
@@ -696,7 +696,8 @@ footer .fab {
        padding-left: 0;
        padding-right: 0;
      }
-  .bg-solar-dark {
-    background-image: url('/images/solar-dark-450.webp');
-  }
+     .banner,
+     .banner-with-header {
+      background-image: url('/images/solar-dark-450.webp');
+     }
  }
