@@ -601,6 +601,7 @@ footer nav a:hover {
 }
 footer h4 {
   color:var(--featured-text);
+  margin-bottom: 1rem;
 }
 .sub-footer { padding-top: 5%;}
 .sub-footer p {
@@ -663,8 +664,6 @@ footer .fab {
    .sm-margin-b-0 { margin-bottom: 0; }
    .sm-margin-l-0 { margin-left: 0; }
    .sm-margin-r-0 { margin-right: 0; }
-   .logo h2 {font-size: 2rem;}
-   .logo-beige { width: 200px;}
    .column-reverse {
      flex-direction: column-reverse;}
   
