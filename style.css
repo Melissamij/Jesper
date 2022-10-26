@@ -294,7 +294,6 @@ font family: headers : font-family: 'Catamaran', sans-serif;
 button {
   display: inline-block;
   background-color: var(--featured-text);
-  /*border: 0.5px solid var(--light-text);*/
   color: var(--light-text);
   padding: 0.5rem 1.5rem;
 }
@@ -410,11 +409,6 @@ button a {
       display: none;
       min-height: 100vh;
       background-color: var(--bg-light);
-      /*
-      font-size: 2rem;
-      line-height: 1.1;
-      margin-bottom: 1rem;
-      padding: 5%;*/
       position: fixed; 
       top: 0;
       bottom: 0;
