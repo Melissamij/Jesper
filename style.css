@@ -471,6 +471,7 @@ button a {
 
 .clickable-box .overlay {
   min-height: 12rem;
+  height: 20rem;
   padding: 3rem 1rem;
   background-color: rgba(0,0,10,0.4);
   color: white;
