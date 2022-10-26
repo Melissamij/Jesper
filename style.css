@@ -614,6 +614,7 @@ footer .fab {
    footer, nav a { 
     font-size: 1.7rem;
     padding: 0.7rem;
+    margin: 1.5rem;
 
    }
    .bold { font-weight: 600;}
