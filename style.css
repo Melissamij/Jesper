@@ -678,5 +678,6 @@ footer .fab {
      .banner,
      .banner-with-header {
       background-image: url('/images/solar-dark-450.webp');
+      min-height: 50vh;
      }
  }
