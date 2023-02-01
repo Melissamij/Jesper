@@ -10,6 +10,9 @@ seo:
   hide-from-google: false
 banner:
   - featured_image: /images/solar-dark.webp
+card:
+  - card_image: /images/solar-dark-450.webp
+    title: Solcelle Anlæg
 ---
 {% include header-nav.html %}
 
@@ -24,19 +27,20 @@ banner:
          
 
           <div class="grid padded-1 editable capped-width-wide">
-
+{% for item in page.cards %}
               <div class="col-4_sm-12 padded-05 ">
-                    <a href="/losninger" class="clickable-box bg-image-section" style="background-image:url('/images/solar-dark-450.webp')"> 
-                      <div class="overlay padded light-text">
-                        <h3 class="light-text">Solcelle Anl&aelig;g</h3>
+                    <a href="/losninger" class="clickable-box bg-image-section" style="background-image:url('{{item.card_image}}')"> 
+                      <div class="overlay padded center">
+                        <h3 class="light-text padded-3">{{item.title}}</h3>
                       </div>
                     </a>
               </div>
-
+{% endfor %}
+<!----
               <div class="col-4_sm-12 padded-05 ">
                 <a href="/losninger" class="clickable-box bg-image-section" style="background-image:url('/images/ampoule.webp')"> 
-                  <div class="overlay padded light-text center">
-                    <h3 class="light-text"> Belysnings opgaver.</h3>
+                  <div class="overlay padded center">
+                    <h3 class="light-text padded-3"> Belysnings opgaver.</h3>
                   </div>
                 </a>
               </div>
@@ -44,11 +48,11 @@ banner:
               <div class="col-4_sm-12 padded-05 ">
                 <a href="/losninger" class="clickable-box bg-image-section" style="background-image:url('/images/panel.webp')"> 
                   <div class="overlay padded light-text">
-                    <h3 class="light-text"> El-Renovering.</h3>
+                    <h3 class="light-text padded-3"> El-Renovering.</h3>
                   </div>
                 </a>
             </div>
-            
+          --->
           </div>
       </section>
    

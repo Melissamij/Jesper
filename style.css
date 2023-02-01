@@ -46,6 +46,7 @@ font family: headers : font-family: 'Catamaran', sans-serif;
  .padded-05 { padding: 0.5rem; }
  .padded-1  { padding: 1rem; }
  .padded-2  { padding: 2rem; }
+ .padded-3 {padding: 3rem;}
  
  .padded-t  { padding-top: 5%; }
  .padded-b  { padding-bottom: 5%; }
