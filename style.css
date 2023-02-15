@@ -9,125 +9,252 @@ font family: headers : font-family: 'Catamaran', sans-serif;
 
 */
 
-*{
-    padding: o;
-    margin: o;
-    box-sizing: border-box;
+* {
+  padding: o;
+  margin: o;
+  box-sizing: border-box;
 }
 
-[class*=grid] {
-    margin:0;}
- 
-  img { max-width: 100%; }
- 
-  html { scroll-behavior: smooth;}
+[class*="grid"] {
+  margin: 0;
+}
 
-  /* ---------- Negative Space Utility Classes  ------------------ */ 
+img {
+  max-width: 100%;
+}
 
-.capped-width-wide      { max-width: 1600px; margin: auto; }
-.capped-width           { max-width: 1200px; margin: auto; }
-.capped-width-narrow    { max-width: 1000px; margin: auto; }
-.capped-width-v-narrow  { max-width: 800px;  margin: auto; }
+html {
+  scroll-behavior: smooth;
+}
 
- /* Utility classes  vh */
- 
- .tall-50 { min-height: 50vh; }
- .tall-60 { min-height: 60vh; }
- .tall-70 { min-height: 70vh; }
- .tall-80 { min-height: 80vh; }
- .tall-90 { min-height: 90vh; }
- .tall-100 { min-height: 100vh;}
- 
- /* Padding Utility Classes */ 
- .padded-sm { padding: 2.5%; }
- .padded    { padding: 5%;   }
- .padded-lg { padding: 10%;  }
- 
- .padded-05 { padding: 0.5rem; }
- .padded-1  { padding: 1rem; }
- .padded-2  { padding: 2rem; }
- .padded-3 {padding: 3rem;}
- 
- .padded-t  { padding-top: 5%; }
- .padded-b  { padding-bottom: 5%; }
- .padded-l  { padding-left: 5%; }
- .padded-r  { padding-right: 5%; }
- 
- .padded-tb  { padding-top: 5%; padding-bottom: 5%; }
- .padded-lr  { padding-left: 5%; padding-right: 5%; }
- 
- .padded-t-1 { padding-top: 1rem; }
- .padded-b-1 { padding-bottom: 1rem; }
- .padded-l-1 { padding-left: 1rem; }
- .padded-r-1 { padding-right: 1rem; }
- 
- .padded-t-2 { padding-top: 2rem; }
- .padded-b-2 { padding-bottom: 2rem; }
- .padded-l-2 { padding-left: 2rem; }
- .padded-r-2 { padding-right: 2rem; }
- 
- .padded-t-0 { padding-top: 0; }
- .padded-b-0 { padding-bottom: 0; }
- .padded-l-0 { padding-left: 0; }
- .padded-r-0 { padding-right: 0; }
- 
- /* Margin Utility Classes */ 
- 
- .margin-t { margin-top: 5%; }
- .margin-b { margin-bottom: 5%; }
- .margin-l { margin-left: 5%; }
- .margin-r { margin-right: 5%; }
- 
- .margin-t-1 { margin-top: 1rem; }
- .margin-b-1 { margin-bottom: 1rem; }
- .margin-l-1 { margin-left: 1rem; }
- .margin-r-1 { margin-right: 1rem; }
- 
- .margin-t-2 { margin-top: 2rem; }
- .margin-b-2 { margin-bottom: 2rem; }
- .margin-l-2 { margin-left: 2rem; }
- .margin-r-2 { margin-right: 2rem; }
- 
- .margin-b-3 { margin-bottom: 3rem;}
- 
- .margin-t-0 { margin-top: 0; }
- .margin-b-0 { margin-bottom: 0; }
- .margin-l-0 { margin-left: 0; }
- .margin-r-0 { margin-right: 0; }
- 
- .margin-tb { margin-top: 5%; margin-bottom: 5%; }
- .margin-lr { margin-left: 5%; margin-right: 5%; }
- 
+/* ---------- Negative Space Utility Classes  ------------------ */
 
- /*  utility classes background */ 
- .full-width {
-   align-items: center;
-   justify-content: center;
-   width: 100%;
-   height: 100%;
-   display: flex;
-   position: absolute;
-  
- 
- }
- .capped-width-wide  {max-width: 1800px; margin: auto;}
- 
- .capped-width{
-     max-width:1000px;
-     margin: auto;
- }
- .capped-width-narrow{
-     max-width: 900px;
-     margin: auto;
- }
- /*  Background colors */
- .bg-light {background-color: var(--bg-light); }
- .bg-dark {background-color: var(--bg-dark);}
- .bg-sand {background-color: var(--bg-sand);}
+.capped-width-wide {
+  max-width: 1600px;
+  margin: auto;
+}
+.capped-width {
+  max-width: 1200px;
+  margin: auto;
+}
+.capped-width-narrow {
+  max-width: 1000px;
+  margin: auto;
+}
+.capped-width-v-narrow {
+  max-width: 800px;
+  margin: auto;
+}
 
- .bg-overlay::after {
+/* Utility classes  vh */
+
+.tall-50 {
+  min-height: 50vh;
+}
+.tall-60 {
+  min-height: 60vh;
+}
+.tall-70 {
+  min-height: 70vh;
+}
+.tall-80 {
+  min-height: 80vh;
+}
+.tall-90 {
+  min-height: 90vh;
+}
+.tall-100 {
+  min-height: 100vh;
+}
+
+/* Padding Utility Classes */
+.padded-sm {
+  padding: 2.5%;
+}
+.padded {
+  padding: 5%;
+}
+.padded-lg {
+  padding: 10%;
+}
+
+.padded-05 {
+  padding: 0.5rem;
+}
+.padded-1 {
+  padding: 1rem;
+}
+.padded-2 {
+  padding: 2rem;
+}
+.padded-3 {
+  padding: 3rem;
+}
+
+.padded-t {
+  padding-top: 5%;
+}
+.padded-b {
+  padding-bottom: 5%;
+}
+.padded-l {
+  padding-left: 5%;
+}
+.padded-r {
+  padding-right: 5%;
+}
+
+.padded-tb {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.padded-lr {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.padded-t-1 {
+  padding-top: 1rem;
+}
+.padded-b-1 {
+  padding-bottom: 1rem;
+}
+.padded-l-1 {
+  padding-left: 1rem;
+}
+.padded-r-1 {
+  padding-right: 1rem;
+}
+
+.padded-t-2 {
+  padding-top: 2rem;
+}
+.padded-b-2 {
+  padding-bottom: 2rem;
+}
+.padded-l-2 {
+  padding-left: 2rem;
+}
+.padded-r-2 {
+  padding-right: 2rem;
+}
+
+.padded-t-0 {
+  padding-top: 0;
+}
+.padded-b-0 {
+  padding-bottom: 0;
+}
+.padded-l-0 {
+  padding-left: 0;
+}
+.padded-r-0 {
+  padding-right: 0;
+}
+
+/* Margin Utility Classes */
+
+.margin-t {
+  margin-top: 5%;
+}
+.margin-b {
+  margin-bottom: 5%;
+}
+.margin-l {
+  margin-left: 5%;
+}
+.margin-r {
+  margin-right: 5%;
+}
+
+.margin-t-1 {
+  margin-top: 1rem;
+}
+.margin-b-1 {
+  margin-bottom: 1rem;
+}
+.margin-l-1 {
+  margin-left: 1rem;
+}
+.margin-r-1 {
+  margin-right: 1rem;
+}
+
+.margin-t-2 {
+  margin-top: 2rem;
+}
+.margin-b-2 {
+  margin-bottom: 2rem;
+}
+.margin-l-2 {
+  margin-left: 2rem;
+}
+.margin-r-2 {
+  margin-right: 2rem;
+}
+
+.margin-b-3 {
+  margin-bottom: 3rem;
+}
+
+.margin-t-0 {
+  margin-top: 0;
+}
+.margin-b-0 {
+  margin-bottom: 0;
+}
+.margin-l-0 {
+  margin-left: 0;
+}
+.margin-r-0 {
+  margin-right: 0;
+}
+
+.margin-tb {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.margin-lr {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+/*  utility classes background */
+.full-width {
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: absolute;
+}
+.capped-width-wide {
+  max-width: 1800px;
+  margin: auto;
+}
+
+.capped-width {
+  max-width: 1000px;
+  margin: auto;
+}
+.capped-width-narrow {
+  max-width: 900px;
+  margin: auto;
+}
+/*  Background colors */
+.bg-light {
+  background-color: var(--bg-light);
+}
+.bg-dark {
+  background-color: var(--bg-dark);
+}
+.bg-sand {
+  background-color: var(--bg-sand);
+}
+
+.bg-overlay::after {
   z-index: 1;
-  content: ""; 
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -144,152 +271,215 @@ font family: headers : font-family: 'Catamaran', sans-serif;
 }
 /* Add a second class to change the color or style  */
 
-.bg-overlay-gradient::after { 
-  background-image: linear-gradient(0deg, rgba(54, 53, 53, 0.3), rgba(0, 0, 0, 0));
-} 
+.bg-overlay-gradient::after {
+  background-image: linear-gradient(
+    0deg,
+    rgba(54, 53, 53, 0.3),
+    rgba(0, 0, 0, 0)
+  );
+}
 
-.bg-overlay-featured::after { 
+.bg-overlay-featured::after {
   background-color: var(--featured);
   opacity: 0.5;
-} 
+}
 
 /*-------------------IMAGES----------------------------------*/
 .bg-image {
-  background-image: url('/images/light.webp');
+  background-image: url("/images/light.webp");
   background-size: cover;
   background-position: center;
-  color:var(--bg-dark);
+  color: var(--bg-dark);
   /*min-height: 10rem;*/
 }
 .bg-lights {
-  background-image: url('/images/light.webp');
+  background-image: url("/images/light.webp");
   background-position: 0px 280px;
   min-height: 10rem;
-
 }
 .bg-solar-dark {
-  background-image: url('/images/solar-dark.webp');
+  background-image: url("/images/solar-dark.webp");
   background-size: cover;
   background-position: center;
   min-height: 15rem;
 }
 .bg-ampoule {
-  background-image: url('/images/ampoule.webp');
+  background-image: url("/images/ampoule.webp");
   background-size: cover;
   background-position: center;
 }
 .bg-car {
-  background-image: url('/images/car.webp');
+  background-image: url("/images/car.webp");
   background-size: cover;
   background-position: center;
 }
 
+.bg-yellow-logo{
+  background-image: url("/images/ve-sol-100.webp");
+}
+.bg-green-logo{
+  background-image: url("/images/ve-warm-100.webp");
+}
 
+/*-------------------------------------------------- utility classes text */
 
- /*-------------------------------------------------- utility classes text */
- 
- .light-text { color:var(--light-text); } 
- 
- .left   { text-align: left; }
- .center { text-align: center; }
- .right  { text-align: right; }
- 
- .dark-text {color:var(--dark-text); }
- .featured-text{ color: var(--featured-text); }
- .featured-text-white{ color:var(--featured-text-white); }
- .subtle { font-weight: 100;}
- 
- .small-text{font-size: 1rem;}
- .medium-text{
+.light-text {
+  color: var(--light-text);
+}
+
+.left {
+  text-align: left;
+}
+.center {
+  text-align: center;
+}
+.right {
+  text-align: right;
+}
+
+.dark-text {
+  color: var(--dark-text);
+}
+.featured-text {
+  color: var(--featured-text);
+}
+.featured-text-white {
+  color: var(--featured-text-white);
+}
+.subtle {
+  font-weight: 100;
+}
+
+.small-text {
+  font-size: 1rem;
+}
+.medium-text {
   font-size: 2.2rem;
-  line-height: 1.1;}
- .big-text{font-size: 4.5rem;}
- 
- .italic { font-style: italic;}
- .bold {font-weight: bold;}
- 
- .subtitle{
-   font-size: 1rem;
-   color: rgb(120,120,125);}
- 
- .font-weight-light{ font-weight:200;}
- .font-weight-normal{font-weight: 400;}
- .font-weight-bold{font-weight: 800;}
- 
- /*-------------------------------------------- General CSS Responsive Styles */
- 
- /* Default Responsive Styles (Dekstop and below) */
- .mob-show {
-     display: none; 
-   }
-   
-   .landscape{ padding-bottom: 65%;}
-   .portrait {padding-bottom: 125%;}
-   .portrait-tall { padding-bottom: 175%; }
-   .square {padding-bottom: 100%;}
-   
-   /* Background Position */
-   .bg-pos-t { background-position: top; }
-   .bg-pos-b { background-position: bottom; }
-   .bg-pos-l { background-position: left; }
-   .bg-pos-r { background-position: right; }
- 
-   
+  line-height: 1.1;
+}
+.big-text {
+  font-size: 4.5rem;
+}
 
-  /*-----------------------TYPO STYLES--------------------------------*/
-  body {
-    color: var(--dark-text);
-    background-color: var(--bg-light);
-    font-family: 'Overpass', sans-serif;;
-  }
+.italic {
+  font-style: italic;
+}
+.bold {
+  font-weight: bold;
+}
 
-  h1 {
-    font-family: 'Catamaran', sans-serif;
-    font-weight: 800;
-    font-size: 3rem;
-    color: var(--featured-text);
-  }
+.subtitle {
+  font-size: 1rem;
+  color: rgb(120, 120, 125);
+}
 
-  h2 {
-    font-family: 'Catamaran', sans-serif;
-    font-weight: 800;
-    font-size: 2.5rem;
-    line-height: 1.1;
-    margin-bottom: 1rem;
-    color:var(--featured-text);
-  }
+.font-weight-light {
+  font-weight: 200;
+}
+.font-weight-normal {
+  font-weight: 400;
+}
+.font-weight-bold {
+  font-weight: 800;
+}
 
-  h3,h4 {
-    font-family: 'Catamaran', sans-serif;
-    font-weight: 800;
-    line-height: 1;
-    color: var(--featured-text);
-  }
+/*-------------------------------------------- General CSS Responsive Styles */
 
-  p,ul{
-    font-weight: 300;
-    line-height: 1.5;
-    margin-bottom: 1rem;
-  }
-  p:last-child {margin-bottom: 0%;}
+/* Default Responsive Styles (Dekstop and below) */
+.mob-show {
+  display: none;
+}
 
-  a {
-    color:inherit;
-    text-decoration: none;
-    }
-    
-  a:hover{
-    color: var(--featured-text);
-    font-weight: 500;
-  }
-  
-  a:hover .phone-icon-dark {
-    color:#F8F5F2;
-  }
-  a:hover .phone-icon-light{
-    color: var(--featured-text);
-  }
-  ul { margin-bottom: 3%;}
+.landscape {
+  padding-bottom: 65%;
+}
+.portrait {
+  padding-bottom: 125%;
+}
+.portrait-tall {
+  padding-bottom: 175%;
+}
+.square {
+  padding-bottom: 100%;
+}
+.landscape-wide {
+  padding-bottom: 56%;
+}
+
+/* Background Position */
+.bg-pos-t {
+  background-position: top;
+}
+.bg-pos-b {
+  background-position: bottom;
+}
+.bg-pos-l {
+  background-position: left;
+}
+.bg-pos-r {
+  background-position: right;
+}
+
+/*-----------------------TYPO STYLES--------------------------------*/
+body {
+  color: var(--dark-text);
+  background-color: var(--bg-light);
+  font-family: "Overpass", sans-serif;
+}
+
+h1 {
+  font-family: "Catamaran", sans-serif;
+  font-weight: 800;
+  font-size: 3rem;
+  color: var(--featured-text);
+}
+
+h2 {
+  font-family: "Catamaran", sans-serif;
+  font-weight: 800;
+  font-size: 2.5rem;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+  color: var(--featured-text);
+}
+
+h3,
+h4 {
+  font-family: "Catamaran", sans-serif;
+  font-weight: 800;
+  line-height: 1;
+  color: var(--featured-text);
+}
+
+p,
+ul {
+  font-weight: 300;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+p:last-child {
+  margin-bottom: 0%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--featured-text);
+  font-weight: 500;
+}
+
+a:hover .phone-icon-dark {
+  color: #f8f5f2;
+}
+a:hover .phone-icon-light {
+  color: var(--featured-text);
+}
+ul {
+  margin-bottom: 3%;
+}
 
 /*----------------------BUTTON----------------------------------*/
 .button {
@@ -300,7 +490,7 @@ font family: headers : font-family: 'Catamaran', sans-serif;
 }
 
 .button:hover {
-  background-color: var(--bg-light); 
+  background-color: var(--bg-light);
   color: var(--featured-text);
 }
 .button a {
@@ -312,27 +502,25 @@ font family: headers : font-family: 'Catamaran', sans-serif;
   color: var(--featured-text);
 }
 
-
 .button-inverted {
   background-color: var(--bg-light);
   color: var(--featured-text);
   padding: 1rem 1.5rem;
 }
 .button-inverted:hover {
-  background-color:var(--bg-dark);
-  color:var(--light-text);
+  background-color: var(--bg-dark);
+  color: var(--light-text);
 }
 /*--- Phone Icon--*/
 .phone-icon-dark {
-  font-size:1.5rem;
+  font-size: 1.5rem;
   color: var(--featured-text);
   padding-right: 0.5rem;
-
 }
 
 .phone-icon-light {
-  font-size:1rem;
-  color:#F8F5F2;
+  font-size: 1rem;
+  color: #f8f5f2;
   font-size: 1.5rem;
   padding-right: 0.5rem;
 }
@@ -341,7 +529,7 @@ font family: headers : font-family: 'Catamaran', sans-serif;
 
 #myBtn {
   display: none; /* hidden by default */
-  position: fixed; 
+  position: fixed;
   bottom: 20px;
   right: 30px;
   z-index: 99; /* make sure it does not overlap */
@@ -361,114 +549,104 @@ font family: headers : font-family: 'Catamaran', sans-serif;
   background-color: var(--bg-sand);
 }
 
-
-
 /*-----------------------HEADER STYLES--------------------------*/
 
-    header a{
-      text-decoration: none;
-      display: inline-block;
-      padding: 0.5rem;
-    }
-    header a:hover {
-      color:var(--featured-text);
-    }
+header a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.5rem;
+}
+header a:hover {
+  color: var(--featured-text);
+}
 
-    .logo {
-      background-size: cover;
-      background-position: center;
-    }
-    a:hover .logo {
-        color:inherit;
-        text-decoration: none;
-        font-weight: 800;
-        }
-        
-    
-    .nav-button{
-      border: 2px solid;
-      border-radius: 3px;
-      padding: 0.5rem 1.5rem;
-      margin-left: 1rem;
-      background-color:var(--bg-sand);
-      color:var(--featured-text-white);
-      
-    }
-    .nav-button:hover{
-      background-color: white;
-      color: var(--bg-sand);
-    }
+.logo {
+  background-size: cover;
+  background-position: center;
+}
+a:hover .logo {
+  color: inherit;
+  text-decoration: none;
+  font-weight: 800;
+}
+
+.nav-button {
+  border: 2px solid;
+  border-radius: 3px;
+  padding: 0.5rem 1.5rem;
+  margin-left: 1rem;
+  background-color: var(--bg-sand);
+  color: var(--featured-text-white);
+}
+.nav-button:hover {
+  background-color: white;
+  color: var(--bg-sand);
+}
 /* -------------------------------------Mobile Menu Styles */
-    .hamburger-button {
-      cursor: pointer;
-      color: var(--featured-text);
-      display: inline-block;
-      position: relative;
-      right: 1rem;
-      top: 0.4rem;
-      z-index: 2;
-      }
+.hamburger-button {
+  cursor: pointer;
+  color: var(--featured-text);
+  display: inline-block;
+  position: relative;
+  right: 1rem;
+  top: 0.4rem;
+  z-index: 2;
+}
 
-      .hamburger-button.active {
-      color: #625C5C;
-      }
+.hamburger-button.active {
+  color: #625c5c;
+}
 
-      .hamburger-button i {
-      font-size: 2.2rem;
-      margin-bottom: 0;
-      }
+.hamburger-button i {
+  font-size: 2.2rem;
+  margin-bottom: 0;
+}
 
-    .mobile-menu {
-      display: none;
-      min-height: 100vh;
-      background-color: var(--bg-light);
-      position: fixed; 
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      text-align: left;
-      z-index: 1;
-      font-weight: 800;
-    }
+.mobile-menu {
+  display: none;
+  min-height: 100vh;
+  background-color: var(--bg-light);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: left;
+  z-index: 1;
+  font-weight: 800;
+}
 
-    .mobile-menu a {
-    font-family: 'Catamaran', sans-serif;
-    display:block;
-    color: var(--featured-text);
-    font-size: 2rem;
-    padding: 5%;
-    font-weight: 200;
-    }
-    .mobile-menu a:hover{ 
-      color: var(--dark-text);
-      font-weight: 800;
-    }
+.mobile-menu a {
+  font-family: "Catamaran", sans-serif;
+  display: block;
+  color: var(--featured-text);
+  font-size: 2rem;
+  padding: 5%;
+  font-weight: 200;
+}
+.mobile-menu a:hover {
+  color: var(--dark-text);
+  font-weight: 800;
+}
 
-  
+/* ---------------banner fixed */
+.banner,
+.banner-with-header {
+  background-image: url("/images/solar-dark.webp");
+  background-size: cover;
+  min-height: 80vh;
+}
 
-
-   /* ---------------banner fixed */
-   .banner,
-   .banner-with-header {
-     background-image: url('/images/solar-dark.webp');
-     background-size: cover; 
-     min-height: 80vh;
-
-   }
-  
-   
-   /* avoid breaking on phones*/
-   @media(min-width:450px) {
-    .fixed {
-      background-attachment: fixed;
-    }
+/* avoid breaking on phones*/
+@media (min-width: 450px) {
+  .fixed {
+    background-attachment: fixed;
   }
-  
- 
+}
+
 /*---------------------SERVICE SECTION------------------- */
 .bg-image-section {
-  background-color: rgb(90,90,90);
+  background-color: rgb(90, 90, 90);
   background-size: cover;
   background-position: center;
 }
@@ -486,7 +664,7 @@ font family: headers : font-family: 'Catamaran', sans-serif;
   min-height: 12rem;
   height: 20rem;
   padding: 3rem 1rem;
-  background-color: rgba(0,0,10,0.4);
+  background-color: rgba(0, 0, 10, 0.4);
   color: white;
 }
 
@@ -495,83 +673,81 @@ font family: headers : font-family: 'Catamaran', sans-serif;
 }
 
 .clickable-box:hover {
-  background-color: rgba(0,0,10,0.6);
-  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.4), 0 10px 20px -5px rgba(0, 0, 0, 0.4);
-  margin-top:-2px;
+  background-color: rgba(0, 0, 10, 0.6);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.4),
+    0 10px 20px -5px rgba(0, 0, 0, 0.4);
+  margin-top: -2px;
 }
 /*-------------------- CHOSE US SECTION------------------------*/
 .big-icon {
   font-size: 2rem;
-  color:var(--featured-text);
+  color: var(--featured-text);
 }
 
 /*--------------------- KONTAKT FORM-----------------------*/
 
-
 /*-------------- form style */
-form [class*=col-] {
+form [class*="col-"] {
   width: 50%;
   flex-direction: column;
-
-  }
+}
 input {
   border-style: solid;
-  border: 2px solid #FAF6F0;
+  border: 2px solid #faf6f0;
   padding: 0.8em;
   display: block;
   width: 100%;
   font-size: 1rem;
-  }
+}
 
-label, .checkboxes {
+label,
+.checkboxes {
   display: inline-block;
   padding-bottom: 2%;
 }
-  input:focus,
-  textarea:focus {
-    outline: none;
-    border: 2px solid var(--featured-text);
-  }
-  
-  textarea {
-    min-height: 7em;
-    width: 100%;
-    border: none;
-  }
-  
+input:focus,
+textarea:focus {
+  outline: none;
+  border: 2px solid var(--featured-text);
+}
+
+textarea {
+  min-height: 7em;
+  width: 100%;
+  border: none;
+}
+
+.email-signup input {
+  width: 30%;
+  display: inline-block;
+  max-width: 250px;
+  margin-top: 1rem;
+}
+
+.email-signup .button-solid {
+  padding: 0.8em;
+  border-radius: 0;
+  font-size: 1rem;
+}
+form .button {
+  width: 100%;
+  background-color: var(--bg-dark);
+}
+form .button:hover {
+  background-color: var(--bg-sand);
+  color: var(--featured-text);
+}
+@media (max-width: 768px) {
   .email-signup input {
-    width: 30%;
-    display: inline-block;
-    max-width: 250px;
-    margin-top:1rem;
+    width: 100%;
+    max-width: 100%;
   }
-  
-  .email-signup .button-solid {
-    padding: 0.8em;
-    border-radius: 0;
-    font-size: 1rem;
-  }
-  form .button {
-    width:100%;
-    background-color: var(--bg-dark);
-  }
-  form .button:hover{
-    background-color: var(--bg-sand);
-    color: var(--featured-text);
-  }
-    @media(max-width:768px) {
-     .email-signup input {
-       width: 100%;
-       max-width: 100%;
-     }
-   }
+}
 
+/*----------- Footer-------------- */
 
-
- /*----------- Footer-------------- */
-
- footer nav a {
-  display:block;
+footer nav a {
+  display: block;
   padding: 0.25rem;
   font-weight: 200;
   text-align: top;
@@ -582,112 +758,178 @@ footer nav a:hover {
   font-weight: 500;
 }
 footer h4 {
-  color:var(--featured-text);
+  color: var(--featured-text);
   margin-bottom: 1rem;
 }
-.sub-footer { padding-top: 5%;}
+.sub-footer {
+  padding-top: 5%;
+}
 .sub-footer p {
-    font-size: 0.8rem;
-    opacity: 0.7;
+  font-size: 0.8rem;
+  opacity: 0.7;
 }
 footer .fab {
   font-size: 30px;
 }
 
+/* General CSS Responsive Styles (Apply everywhere unless overridden) */
 
- /* General CSS Responsive Styles (Apply everywhere unless overridden) */ 
+.show-xs,
+.show-sm,
+.show-md,
+.mobile-menu {
+  display: none;
+}
 
- .show-xs, 
- .show-sm,
- .show-md,
- .mobile-menu {display: none;}
- 
- /* ------- MD Media Query (64em / 1024px) --------------- */ 
- /* - Styles added here will apply at devices smaller than 1024px, or zoomed in equivalent */ 
- 
- @media (max-width: 64em) {
-   .show-md { display: block; }
-   .hide-md { display: none; }
-   
- }
- 
- /* ------- SM Media Query (48em / 768px) --------------- */ 
- /* - Styles added here will apply at devices smaller than 768px, or zoomed in equivalent */ 
- 
- @media (max-width: 48em) {
-   html {font-size: 14px;}
-   h1 { font-size: 2rem;}
-   p {font-size: 1.3rem;}
-   h3 {font-size: 2rem;}
-   h4 {
+/* ------- MD Media Query (64em / 1024px) --------------- */
+/* - Styles added here will apply at devices smaller than 1024px, or zoomed in equivalent */
+
+@media (max-width: 64em) {
+  .show-md {
+    display: block;
+  }
+  .hide-md {
+    display: none;
+  }
+}
+
+/* ------- SM Media Query (48em / 768px) --------------- */
+/* - Styles added here will apply at devices smaller than 768px, or zoomed in equivalent */
+
+@media (max-width: 48em) {
+  html {
+    font-size: 14px;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1.3rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  h4 {
     margin-top: 1.5rem;
-    font-size: 1.5rem;}
-   footer{ text-align: center;}
-   footer, h4 { font-size: 1,5rem;}
-   footer, nav a { 
+    font-size: 1.5rem;
+  }
+  footer {
+    text-align: center;
+  }
+  footer,
+  h4 {
+    font-size: 1, 5rem;
+  }
+  footer,
+  nav a {
     font-size: 1.7rem;
     padding: 0.7rem;
     margin: 1.5rem;
-
-   }
-   .bold { font-weight: 600;}
-   .button{
+  }
+  .bold {
+    font-weight: 600;
+  }
+  .button {
     display: inline;
   }
-   .mob-hide { display: none; }
-   .mob-show { display: block; }
-   .show-sm { display: block; }
-   .hide-sm { display: none;  }
-      
-   .sm-text-center { text-align: center; }
-   .sm-text-left { text-align: left; }
-   .sm-text-right { text-align: right; }
- 
-   .sm-padded { padding: 5%; }
-   .sm-padded-1 { padding: 1rem; }
-   .sm-padded-05 { padding: 0.5rem; }
- 
-   .sm-padded-t-0 { padding-top: 0; }
-   .sm-padded-b-0 { padding-bottom: 0; }
-   .sm-padded-l-0 { padding-left: 0; }
-   .sm-padded-r-0 { padding-right: 0; }
-   
-   .sm-margin-t-0 { margin-top: 0; }
-   .sm-margin-b-0 { margin-bottom: 0; }
-   .sm-margin-l-0 { margin-left: 0; }
-   .sm-margin-r-0 { margin-right: 0; }
-   .column-reverse {
-     flex-direction: column-reverse;}
-  
-   .header-nav { height: 50vh;}
-   .mobile-menu a{ 
-     font-size: 20px;
-     font-weight: 300;}
+  .mob-hide {
+    display: none;
+  }
+  .mob-show {
+    display: block;
+  }
+  .show-sm {
+    display: block;
+  }
+  .hide-sm {
+    display: none;
+  }
 
-   }
-  
- 
- /* ------- XS Media Query (36em / 576px) --------------- */ 
- /* - Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */ 
- 
- @media (max-width: 36em) {
-   .show-xs { display: block; }
-   .hide-xs { display: none;  }
-   h1 {line-height: 1.1; }
-   .horizontal-scroll {
-       overflow-x: auto;
-       flex-wrap: nowrap;
-       padding-left: 1rem;
-       padding-right: 1rem;
-       padding-bottom: 7%;
-     }
-   .mob-padded-0 {
-       padding-left: 0;
-       padding-right: 0;
-     }
-     .banner,
-     .banner-with-header {
-      background-image: url('/images/solar-dark-450.webp');
-      min-height: 50vh;
-     }
- }
+  .sm-text-center {
+    text-align: center;
+  }
+  .sm-text-left {
+    text-align: left;
+  }
+  .sm-text-right {
+    text-align: right;
+  }
+
+  .sm-padded {
+    padding: 5%;
+  }
+  .sm-padded-1 {
+    padding: 1rem;
+  }
+  .sm-padded-05 {
+    padding: 0.5rem;
+  }
+
+  .sm-padded-t-0 {
+    padding-top: 0;
+  }
+  .sm-padded-b-0 {
+    padding-bottom: 0;
+  }
+  .sm-padded-l-0 {
+    padding-left: 0;
+  }
+  .sm-padded-r-0 {
+    padding-right: 0;
+  }
+
+  .sm-margin-t-0 {
+    margin-top: 0;
+  }
+  .sm-margin-b-0 {
+    margin-bottom: 0;
+  }
+  .sm-margin-l-0 {
+    margin-left: 0;
+  }
+  .sm-margin-r-0 {
+    margin-right: 0;
+  }
+  .column-reverse {
+    flex-direction: column-reverse;
+  }
+
+  .header-nav {
+    height: 50vh;
+  }
+  .mobile-menu a {
+    font-size: 20px;
+    font-weight: 300;
+  }
+}
+
+/* ------- XS Media Query (36em / 576px) --------------- */
+/* - Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */
+
+@media (max-width: 36em) {
+  .show-xs {
+    display: block;
+  }
+  .hide-xs {
+    display: none;
+  }
+  h1 {
+    line-height: 1.1;
+  }
+  .horizontal-scroll {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 7%;
+  }
+  .mob-padded-0 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .banner,
+  .banner-with-header {
+    background-image: url("/images/solar-dark-450.webp");
+    min-height: 50vh;
+  }
+}

@@ -4,9 +4,9 @@ title: Hjem
 seo:
   title: Hjem
   description: |
-    Kontak Nordsjællands el service for tildbud eller information. 
+    Kontak Nordsjællands el service for tildbud eller information.
   social_image:
-  keywords: 'elektriker, solpaneler, varmpumpe, '
+  keywords: "elektriker, solpaneler, varmpumpe, "
   hide-from-google: false
 banner:
   - featured_image: /images/solar-dark.webp
@@ -18,88 +18,145 @@ cards:
   - card_image: /images/panel.webp
     title: El Renovering.
 ---
+
 {% include header-nav.html %}
 
+<!--------------------SERVICES BANNER------------------------------------------------>
+<!---- center text h3 and bit bigger -->
+<section class="padded center editable">
+  <h2>Løsninger</h2>
+  <p class="editable">
+    Det er vores mest specifikke tjenester, tjek vores serviceside eller kontakt
+    for mere information.
+  </p>
 
-
-     <!--------------------SERVICES BANNER------------------------------------------------>   
-     <!---- center text h3 and bit bigger -->
-     <section class="padded center editable ">
-          <h2>Løsninger</h2>
-          <p class="editable">Det er vores mest specifikke tjenester, tjek vores serviceside eller kontakt for mere information.
-          </p>
-         
-
-          <div class="grid padded-1 editable capped-width-wide">
-{% for item in page.cards %}
-              <div class="col-4_sm-12 padded-05 ">
-                    <a href="/losninger" class="clickable-box bg-image-section" style="background-image:url('{{item.card_image}}')"> 
-                      <div class="overlay padded center">
-                        <h3 class="light-text padded-3">{{item.title}}</h3>
-                      </div>
-                    </a>
-              </div>
-{% endfor %}
-          </div>
-      </section>
-   
-    <!--------------------VE CERTI BANNER------------------------------------------------>
-    <section class="padded bg-sand">
-        <div class="grid padded  ">
-          <div class="col-6_sm-12 bg-image bg-solar-dark" style="max-height: 400px;">
-          </div>
-          <div class="col-6_sm-12-middle padded-l editable">
-              <h2 class="subtle-heading">Vores Certificeringer</h2>
-              <h3>Solceller &amp; Varmpumper</h3>
-              <p>VE-godkendelsesordningen er for de installat&oslash;r- og mont&oslash;rvirksomheder, som er blandt de bedste til at installere sm&aring; vedvarende energianl&aelig;g som varmepumper og solceller. Der er tale om en ordning, der viser, at virksomheden har dokumenterede kompetencer til at installere VE-anl&aelig;g korrekt, s&aring; kunden kan f&aring; det st&oslash;rste udbytte af sin VE-installation. VE-godkendelsen erstatter ikke kravet i forbindelse med el- autorisationskr&aelig;vende arbejde.<br />L&aelig;s mere om VE-ordningen p&aring;: <a target="_blank" rel="noopener" href="https://ens.dk/ansvarsomraader/energibesparelser/byggeri-og-renovering/ve-godkendelsesordning ">ens.dk</a></p>
-              <div class="grid">
-                 <img alt="logo for ve solar panel certification" class="col-6" src="/images/ve-sol-100.webp" /> 
-                 <img alt="logo for ve varmpumpe certification" class="col-6" src="/images/ve-warm-100.webp" />
-              </div>
-          </div>
+  <div class="grid padded-1 editable capped-width-wide">
+    {% for item in page.cards %}
+    <div class="col-4_sm-12 padded-05">
+      <a
+        href="/losninger"
+        class="clickable-box bg-image-section"
+        style="background-image:url('{{item.card_image}}')"
+      >
+        <div class="overlay padded center">
+          <h3 class="light-text padded-3">{{item.title}}</h3>
         </div>
-    </section>
+      </a>
+    </div>
+    {% endfor %}
+  </div>
+</section>
 
-    <!--------------------CHOSE US BANNER------------------------------------------------>   
-    <section class="padded centered ">
-        <h2 class="center"> Hvofor vælge os?</h2>
-        <div class="grid padded-1 capped-width-wide ">
-          <div class="col-4_sm-12 padded-1 editable ">
-              <p><i class="fa-solid fa-piggy-bank big-icon"></i></p>
-              <h4>Kvalitet over pris.</h4>
-              <p>Pris og kvalitet hænger typisk sammen. Alt for ofte viser det sig, at det billigste tilbud ender med at blive det dyreste. Typisk skyldes det glemte eller uforudsete elementer, dårligt materialevalg eller en urealistisk vurdering af arbejdstimer. Hos Nordsjællands El Service ApS gør vi alt for at vejlede dig, så dine behov bliver opfyldt samtidig med at kvaliteten er i orden. Vi holder os hele tiden opdateret i samarbejde med vores leverandører og er løbende på kurser for at kunne sikre den nyeste teknologi.</p>
-          </div>
-
-          <div class="col-4_sm-12 padded-1 editable ">
-              <p><i class="fa-solid fa-clock big-icon"></i></p>
-              <h4>Værdier</h4>
-              <ul>
-                  <li>Gennemsigtighed, så du kan føle dig tryg.</li>
-                  <li>Faglig stolthed.</li>
-                  <li>God og klar kommunikation.</li>
-                  <li>Punktlighed, aftaler skal overholdes.</li>
-                  <li>Socialt ansvar.</li>
-              </ul>
-          </div>
-
-          <div class="col-4_sm-12 padded-1 editable ">
-              <p><i class="fa-solid fa-recycle big-icon "></i></p>
-              <h4>Miljøbevidsthed.</h4>
-              <p>Hos Nordsjællands El Service ApS tager vi lige det ekstra skridt for at passe på miljøet.</p>
-              <p>Vi tager altid højde for energi behovet og ser om det er muligt at minimere det ved alternative løsninger.</p>
-              <p>Vores leverandører er ISO 14001 certificeret.</p>
-              <p>Vi arbejder altid ud fra den europæiske miljøvejledning for bæredygtig byggeri "DGNB" og følger DK-GBC's vejledninger. Vi sikrer os, at alle de materialer der bliver installeret har en plan for hvordan de bortskaffes ved "end of life".</p>
-          </div>
+<!--------------------VE CERTI BANNER------------------------------------------------>
+<section class="padded bg-sand">
+  <div class="grid padded">
+    <div
+      class="col-6_sm-12 bg-image bg-solar-dark"
+      style="max-height: 400px"
+    ></div>
+    <div class="col-6_sm-12-middle padded-l editable">
+      <h2 class="subtle-heading">Vores Certificeringer</h2>
+      <h3>Solceller &amp; Varmpumper</h3>
+      <p>
+        VE-godkendelsesordningen er for de installat&oslash;r- og
+        mont&oslash;rvirksomheder, som er blandt de bedste til at installere
+        sm&aring; vedvarende energianl&aelig;g som varmepumper og solceller. Der
+        er tale om en ordning, der viser, at virksomheden har dokumenterede
+        kompetencer til at installere VE-anl&aelig;g korrekt, s&aring; kunden
+        kan f&aring; det st&oslash;rste udbytte af sin VE-installation.
+        VE-godkendelsen erstatter ikke kravet i forbindelse med el-
+        autorisationskr&aelig;vende arbejde.<br />L&aelig;s mere om VE-ordningen
+        p&aring;:
+        <a
+          target="_blank"
+          rel="noopener"
+          href="https://ens.dk/ansvarsomraader/energibesparelser/byggeri-og-renovering/ve-godkendelsesordning "
+          >ens.dk</a
+        >
+      </p>
+      <div class="grid ">
+        <!---<img
+          alt="logo for ve solar panel certification"
+          class="col-6 square"
+          src="/images/ve-sol-100.webp"
+        />
+        <img
+          alt="logo for ve varmpumpe certification"
+          class="col-6 square"
+          src="/images/ve-warm-100.webp"
+        />-->
+        <div class="col-4_sm-12">
+          <div class="bg-image square bg-yellow-logo"></div>
+        </div> 
+        <div class="col-4_sm-12">
+          <div class="bg-image square bg-green-logo"></div>
         </div>
-      </section>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!--------------------KONTAKT BANNER------------------------------------------------>   
+<!--------------------CHOSE US BANNER------------------------------------------------>
+<section class="padded centered">
+  <h2 class="center">Hvofor vælge os?</h2>
+  <div class="grid padded-1 capped-width-wide">
+    <div class="col-4_sm-12 padded-1 editable">
+      <p><i class="fa-solid fa-piggy-bank big-icon"></i></p>
+      <h4>Kvalitet over pris.</h4>
+      <p>
+        Pris og kvalitet hænger typisk sammen. Alt for ofte viser det sig, at
+        det billigste tilbud ender med at blive det dyreste. Typisk skyldes det
+        glemte eller uforudsete elementer, dårligt materialevalg eller en
+        urealistisk vurdering af arbejdstimer. Hos Nordsjællands El Service ApS
+        gør vi alt for at vejlede dig, så dine behov bliver opfyldt samtidig med
+        at kvaliteten er i orden. Vi holder os hele tiden opdateret i samarbejde
+        med vores leverandører og er løbende på kurser for at kunne sikre den
+        nyeste teknologi.
+      </p>
+    </div>
 
-    <section class="padded grid bg-dark  ">
-        <div class="col-12-middle center light-text capped-width-wide">
-            <h3 class="light-text"> KONTAKT OS</h3>
-            <p>Få et tilbud</p>
-            <a href="tel:+004530955295" class="button-inverted"> <i class="fa-solid fa-phone phone-icon-dark"></i> 30955295</a>
-        </div>
-    </section>
-    
+    <div class="col-4_sm-12 padded-1 editable">
+      <p><i class="fa-solid fa-clock big-icon"></i></p>
+      <h4>Værdier</h4>
+      <ul>
+        <li>Gennemsigtighed, så du kan føle dig tryg.</li>
+        <li>Faglig stolthed.</li>
+        <li>God og klar kommunikation.</li>
+        <li>Punktlighed, aftaler skal overholdes.</li>
+        <li>Socialt ansvar.</li>
+      </ul>
+    </div>
+
+    <div class="col-4_sm-12 padded-1 editable">
+      <p><i class="fa-solid fa-recycle big-icon"></i></p>
+      <h4>Miljøbevidsthed.</h4>
+      <p>
+        Hos Nordsjællands El Service ApS tager vi lige det ekstra skridt for at
+        passe på miljøet.
+      </p>
+      <p>
+        Vi tager altid højde for energi behovet og ser om det er muligt at
+        minimere det ved alternative løsninger.
+      </p>
+      <p>Vores leverandører er ISO 14001 certificeret.</p>
+      <p>
+        Vi arbejder altid ud fra den europæiske miljøvejledning for bæredygtig
+        byggeri "DGNB" og følger DK-GBC's vejledninger. Vi sikrer os, at alle de
+        materialer der bliver installeret har en plan for hvordan de bortskaffes
+        ved "end of life".
+      </p>
+    </div>
+  </div>
+</section>
+
+<!--------------------KONTAKT BANNER------------------------------------------------>
+
+<section class="padded grid bg-dark">
+  <div class="col-12-middle center light-text capped-width-wide">
+    <h3 class="light-text">KONTAKT OS</h3>
+    <p>Få et tilbud</p>
+    <a href="tel:+004530955295" class="button-inverted">
+      <i class="fa-solid fa-phone phone-icon-dark"></i> 30955295</a
+    >
+  </div>
+</section>
